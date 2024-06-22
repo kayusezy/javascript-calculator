@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/functional-calculator/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        
+        <div class="cal-display"><input type="text" id="display" disabled></div>
+
+        <div class="cal-buttons">
+            <div id="cal-button" class="cal-button-clear" onclick="appendClear('c')">c</div>
+            <div id="cal-button" class="cal-button-backspace" onclick="deleteLastCharacter()"> &#x232B;</div>
+            <div id="cal-button" class="cal-button" onclick="appendOperator('/')">/</div>
+            <div id="cal-button" class="cal-button" onclick="appendOperator('*')">*</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('7')">7</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('8')">8</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('9')">9</div>
+            <div id="cal-button" class="cal-button" onclick="appendOperator('-')">-</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('4')">4</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('5')">5</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('6')">6</div>
+            <div id="cal-button" class="cal-button-plus" onclick="appendOperator('+')">+</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('1')">1</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('2')">2</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('3')">3</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('0')">0</div>
+            <div id="cal-button" class="cal-button" onclick="appendNumber('00')">00</div>
+            <div id="cal-button" class="cal-button" onclick="appendDecimal('.')">.</div>
+            <div id="cal-button" class="cal-button-equal" style="background-color: blue; border: none;" onclick="appendOperators('=')">=</div>
+        </div>
+
+    </div>
+    <script src="/cal.js"></script>
+</body>
+</html>
